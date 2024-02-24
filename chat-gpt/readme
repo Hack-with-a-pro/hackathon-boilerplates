@@ -33,7 +33,11 @@ pip install openai
 
 ## Step 4: Setup your API Key
 - You will need to set up your API key to access the GPT-3 API.
-- 
+- You can get an API key from the OpenAI dashboard. Go to: https://beta.openai.com/account/api-keys after signing up.
+- From there, generate a "secrect key." You will need this key to authenticate requests to the GPT-3 API.
+- **DO NOT PUSH** this key to GitHub. You should store it in a `.env` file and add the `.env` file to your `.gitignore` file.
+
+  
 
 ## Chat Completion
 - OpenAI offers many services, including chat completion.
@@ -46,7 +50,10 @@ JavaScript example:
 ```javascript
 import OpenAI from "openai";
 
-const openai = new OpenAI();
+// don't actually insert the plain text key here, instead
+// import it from a .env file or other gitignore'd file
+
+const openai = new OpenAI({ apiKey: "YOUR_API_KEY"});
 
 async function main() {
   const completion = await openai.chat.completions.create({
@@ -64,7 +71,10 @@ main();
 Python example:
 ```python
 from openai import OpenAI
-client = OpenAI()
+
+# don't actually insert the plain text key here, instead 
+# import it from a .env file or other gitignore'd file
+client = OpenAI(api_key="YOUR_API_KEY")
 
 response = client.chat.completions.create(
   model="gpt-3.5-turbo",
