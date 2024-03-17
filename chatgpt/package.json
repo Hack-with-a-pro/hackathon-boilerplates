@@ -1,0 +1,30 @@
+{
+  "name": "chatgpt",
+  "version": "1.0.0",
+  "description": "Hack With a Pro boilerplate for interfacing with the ChatGPT API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Hack-with-a-pro/hackathon-boilerplates.git"
+  },
+  "keywords": [
+    "chatgpt"
+  ],
+  "contributors": [
+    "Tejas Kamtam <tejaskamtam@ucla.edu>",
+    "Howard Wang <howardwang@google.com>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hack-with-a-pro/hackathon-boilerplates/issues"
+  },
+  "homepage": "https://github.com/Hack-with-a-pro/hackathon-boilerplates#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.28.4"
+  },
+  "type": "module"
+}
