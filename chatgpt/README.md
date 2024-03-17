@@ -9,18 +9,14 @@ Documentation: https://platform.openai.com/docs/overview
 
 - Go to [OpenAI](https://openai.com) and create an account. Note that you will get $5 in free credit if this is a new account.
 
-## Step 2: Generate an API key
-- Once you have created an account, you will be able to create an API key, which is required to access the ChatGPT API with code. You can find the API key in the API section on the left side of the OpenAI dashboard
-- Once the API key has been created, copy the value and save it somewhere secure. You'll need it later when you start coding.
-
-## Step 3: Take a look at the Documentation
+## Step 2: Take a look at the Documentation
 
 - Go to the [OpenAI API documentation](https://platform.openai.com/docs/overview) and take a look at the documentation.
 - The documentation provides a detailed overview of the API and how to use it.
 - You can also find code examples in various programming languages to help you get started.
 - The [Quickstart](https://platform.openai.com/docs/quickstart) section provides a step-by-step guide to help you get started with the API.
 
-## Step 4: Install the OpenAI Package
+## Step 3: Install the OpenAI Package
 To add the OpenAI npm package to your project, run the following command:
 ```bash
 npm install openai
@@ -33,7 +29,7 @@ pip install openai
 
 ## Step 4: Setup your API Key
 - You will need to set up your API key to access the GPT-3 API. Get an API key from the OpenAI dashboard. Go to: https://platform.openai.com/api-keys after signing up.
-- From there, generate a "secrect key." You will need this key to authenticate requests to the GPT-3 API.
+- From there, generate a "secrect key." You will need this key to authenticate requests to the GPT-3 API in your code.
 - **DO NOT PUSH** this key to GitHub. You should store it in a `.env` file (provided for you).
 
 ## Chat Completion
