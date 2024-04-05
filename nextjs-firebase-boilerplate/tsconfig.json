@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/firebase/firebase.js", "src/firebase/signup.js", "src/firebase/app/signup/page.tsx", "src/firebase/config.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/firebase/firebase.js", "src/firebase/signup.js", "src/firebase/app/signup/page.tsx", "src/firebase/config.js", "src/app/admin/page.js", "src/app/signin/page.js", "src/app/signup/page.js", "src/app/page.js", "src/app/layout.js", "src/context/AuthContext.js", "src/firebase/firestore/addData.js", "src/firebase/auth/signup.js", "src/firebase/auth/signIn.js"],
   "exclude": ["node_modules"]
 }

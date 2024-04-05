@@ -12,7 +12,7 @@ export const metadata = {
 };
 
 // Root layout component for the application
-export default function RootLayout( { children }: { children: React.ReactNode } ): JSX.Element {
+export default function RootLayout( { children } ) {
   return (
     <html lang="en">
       {/*

@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 const auth = getAuth(firebase_app);
 
 // Function to sign up a user with email and password
-export default async function signUp(email: string, password: string) {
+export default async function signUp(email, password) {
   let result = null, // Variable to store the sign-up result
     error = null; // Variable to store any error that occurs
 

@@ -4,7 +4,7 @@ import { getAuth, onAuthStateChanged, User } from 'firebase/auth';
 import firebase_app from '@/firebase/config';
 
 // Initialize Firebase auth instance
-const auth = getAuth( firebase_app );
+const auth = getAuth(firebase_app);
 
 // Create the authentication context
 export const AuthContext = createContext( {} );
@@ -12,14 +12,10 @@ export const AuthContext = createContext( {} );
 // Custom hook to access the authentication context
 export const useAuthContext = () => useContext( AuthContext );
 
-interface AuthContextProviderProps {
-  children: ReactNode;
-}
-
-export function AuthContextProvider( { children }: AuthContextProviderProps ): JSX.Element {
+export function AuthContextProvider( { children } ) {
   // Set up state to track the authenticated user and loading status
-  const [ user, setUser ] = useState<User | null>( null );
-  const [ loading, setLoading ] = useState( true );
+  const [ user, setUser ] = useState(null);
+  const [ loading, setLoading ] = useState(true);
 
   useEffect( () => {
     // Subscribe to the authentication state changes

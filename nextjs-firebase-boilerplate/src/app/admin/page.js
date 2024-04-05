@@ -3,10 +3,10 @@ import { useAuthContext } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
-function Page(): JSX.Element {
+function Page() {
   // Access the user object from the authentication context
   // const { user } = useAuthContext();
-  const { user } = useAuthContext() as { user: any }; // Use 'as' to assert the type as { user: any }
+  const { user } = useAuthContext();
   const router = useRouter();
 
   useEffect( () => {

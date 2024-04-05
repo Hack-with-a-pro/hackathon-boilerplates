@@ -3,13 +3,13 @@ import signUp from "@/firebase/auth/signup";
 import { useRouter } from 'next/navigation';
 import { useState } from "react";
 
-function Page(): JSX.Element {
+function Page() {
   const [ email, setEmail ] = useState( '' );
   const [ password, setPassword ] = useState( '' );
   const router = useRouter();
 
   // Handle form submission
-  const handleForm = async ( event: { preventDefault: () => void } ) => {
+  const handleForm = async (event) => {
     event.preventDefault();
 
     // Attempt to sign up with provided email and password
