@@ -23,7 +23,7 @@ Before getting started, ensure you have the following prerequisites:
 
 ## Getting Started
 
-- Navigate into the project directory: `cd nextjs-13-firebase-starter`
+- Navigate into the project directory: `cd nextjs-firebase-boilerplate`
 - Install the dependencies:
 
 ```bash
@@ -40,28 +40,17 @@ Before getting started, ensure you have the following prerequisites:
   yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. There would be errors initially since we haven't set up Firestore on Firebase yet
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. There would be errors initially since we haven't set up Firestore on Firebase yet.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file. This is one of the advantage of Next.js since it has built in routers. 
+Note: Please follow the instructions on the doc provided (tinyurl.com/hwap-docs) to set up your Firebase project.
+
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file. This is one of the advantage of Next.js since it has built-in routers. 
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Set Up Firebase
 
 <https://console.firebase.google.com/>
-
-- Log in with your Google account.
-- Click on `Go to console` button.
-- Click `Add Project` card.
-- Give your project a name.
-- Click on `Continue` button.
-- Disable `Google Analytics for this project` (unless you wish to use it).
-- Click `Create project` button.
-- Click on the web icon button to create your web app. It will show a text popup `Web`.
-- Register app by giving it a nickname and click `Register app` button.
-- Where package.json is located, in your cli, type `npm i firebase`.
-- In project root, create a file and name it `.env`.
-- Make sure you add `.env` to your `.gitignore` so you don't expose your variables in git repo.
 
 Example...
 
@@ -88,18 +77,13 @@ const app = initializeApp(firebaseConfig);
 Copy and paste the config strings into your `.env` file which should look like the following:
 
 ```md
-NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+FIREBASE_API_KEY=your_api_key
+FIREBASE_AUTH_DOMAIN=your_auth_domain
+FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_STORAGE_BUCKET=your_storage_bucket
+FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+FIREBASE_APP_ID=your_app_id
 ```
-
-
-- Click on `Continue on console` button
-- On your project homepage, choose a product to add to your app. First, click on `Authentication`.
-- Under `Get started with Firebase Auth by adding your first sign-in method` select `Email/Password`.
 
 You should now be setup to use Firebase.
 

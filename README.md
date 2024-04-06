@@ -13,3 +13,4 @@ Clone the repo:
 git clone https://github.com/Hack-with-a-pro/boilerplates.git
 ```
 
+Note: if you cloned this repo before the day of the hackathon, please do a `git pull` to pull the latest changes.
