@@ -16,15 +16,15 @@ Documentation: https://platform.openai.com/docs/overview
 - You can also find code examples in various programming languages to help you get started.
 - The [Quickstart](https://platform.openai.com/docs/quickstart) section provides a step-by-step guide to help you get started with the API.
 
-## Step 3: Install the OpenAI Package
-To add the OpenAI npm package to your project, run the following command:
+## Step 3: Install the packages for the project
+To add npm packages for this project, run the following command:
 ```bash
-npm install openai
+npm install
 ```
 
-To install the OpenAI Python package, run the following command:
+To install the Python packages for this project, run the following command:
 ```bash
-pip install openai
+pip install -r requirements.txt
 ```
 
 ## Step 4: Setup your API Key
