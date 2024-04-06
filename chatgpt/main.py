@@ -6,7 +6,7 @@ from pprint import pprint
 from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv()
+load_dotenv('../.env')
 
 client = OpenAI()
 
