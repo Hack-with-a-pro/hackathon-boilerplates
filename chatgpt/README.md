@@ -39,6 +39,15 @@ pip install -r requirements.txt
 - The `response` variable will be the completion of the conversation, i.e., the next assistant respone given the message history.
 - Note the `choices` attribute of the response object. This is the array of completions, with each completion being a dictionary with the `role` and `content` attributes.
 
-A simple JavaScript example that uses the chat completions API can be found at `index.js`
+A simple JavaScript example that uses the chat completions API can be found at `index.js`. To run this example, run:
+```
+node index.js
+```
 
-A simple Python example that uses the chat completions API can be found at `main.py`
+A simple Python example that uses the chat completions API can be found at `main.py`. To run this example, run:
+```
+python main.py
+```
+You should see the example response commented in the code...if you get a `Quota exhausted` error, make sure that you have enough credits in your OpenAI billing account at [platform.openai.com](https://platform.openai.com).
+
+We recommend that you use the JavaScript example if you're using Next.js since you can directly call the functions exported in your Next.js code.
